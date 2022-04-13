@@ -1,21 +1,103 @@
 
-.container{
-    display: flex;
-}
-
 #logo{
-    width: 50%;
+    width : 200px;
+    height: 100px;
+    justify-content: center;
+}
+body{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #fcfcfc;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    max-width: 1440px;
+    min-width: 320px;
+    h1{
+       font-family: 'Shrikhand', sans-serif;
+    }
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+img{
+    width: 319px;
+    height: 150px;
+}
+.mapmarker{
+    display: flex;
+    justify-content: center;
+}
+.fonctionnement ul li span{
+  
 }
 
-img{
-    height: 400px;
-    width: 400px;
+.heart{
+    position: absolute;
+    left: 314px;
 }
+.number_of_choices{
+    border: solid 1px #9356DC;
+    border-radius: 100%;
+    background-color: #9356DC;
+    color: white;
+}
+
 footer{
     background-color: black;
-    color:white;
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    i{
+        color: white;
+        padding-right: 5px;
+    }
+    .utensils{
+        display: flex;
+    }
+    .hands{
+        display: flex;
+    }
+}
+$white: #fff;
+$pastel-blue: #0097e6;
+$dark-blue: #192a56;
+
+@mixin border-colour($colour){
+  @if ( lightness($colour) > 25% ) {
+      $colour: darken($colour, 30%);
+  } @else {
+      $colour: lighten($colour, 30%);
+  }
+
+  border: 5px solid $colour;
 }
 
-footer li{
-    
+article {
+  display: flex;
+  padding: 5px 10px;
+  color: black;
+  background-color: $white;
+
+  @include border-colour($pastel-blue);
+}
+
+$white: #fff;
+$pastel-blue: #0097e6;
+$text-color: #192a56;
+
+@function background($text-color) {
+  @if ( $text-color == $white ) {
+      @return $pastel-blue;
+  } @else {
+      @return $white;
+  }
+}
+
+button {
+  color: $text-color;
+  background-color: background($text-color);
 }
