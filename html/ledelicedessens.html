@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../style.scss">
+    <link rel="stylesheet" href="../style.css">
     <script src="https://kit.fontawesome.com/aaec03a1ff.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,90 +23,152 @@
                 <img src="../images/logo/ohmyfood.png" alt="Logo d'ohmyfood et page d'accueil" id=logo />
             </a>
         </div>
-</header>
-<section class="menu">
-    <div>
-        <img src="../images/restaurants/ledelicedessens.jpg">
-        <h3>Le délice des sens</h3>
-    </div>
-    <div>
-        <i class="far fa-heart"></i>
-    </div>
-    <div class="entrees">
-        <h2>ENTREES</h2>
-        <article>
-            <h3>Tartare de thon</h3>
-            <p>Assaisonné au yuzu</p>
-            <span>25€</span>
-        </article>
-        <article>
-            <h3>Bouchée de homard croustillant</h3>
-            <p>Et sa farandolle de petits légumes</p>
-            <span>35€</span>
-        </article>
-        <article>
-            <h3>Velouté de cèpes</h3>
-            <p>Aux truffes</p>
-            <span>20€</span>
-        </article>
+    </header>
+    <section class="menu">
+        <div>
+            <img src="../images/restaurants/ledelicedessens.jpg">
+        </div>
+        <div class="title">
+            <h2>Le délice des sens</h2>
+            <div class="heart">
+                <i class="far fa-heart"></i>
+
+            </div>
+        </div>
+        <div class="entrees">
+            <h3>ENTREES</h3>
+            <article class="slide-top">
+                <div class="meal-container">
+                    <div class="text-container">
+                        <h4>Tartare de thon</h4>
+                        <p>Assaisonné au yuzu</p>
+                    </div>
+                    <div class="check">
+                        <span>25€</span>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <div class="text">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="slide-top">
+                <div class="meal-container">
+                    <div class="text-container">
+                        <h4>Bouchée de homard croustillant</h4>
+                        <p>Et sa farandolle de petits légumes</p>
+                    </div>
+                    <div class="check">
+                        <span>35€</span>
+                    </div>
+                </div>
+            </article>
+            <article class="slide-top">
+                <div class="meal-container">
+                    <div class="text-container">
+                        <h4>Velouté de cèpes</h4>
+                        <p>Aux truffes</p>
+                    </div>
+                    <div class="check">
+                        <span>20€</span>
+                    </div>
+                </div>
+            </article>
         </div>
         <div class="plats">
-            <h2>PLATS</h2>
-            <article>
-                <h3>Poulet rôti aux herbes de Provence</h3>
-                <p>Et sa crème de truffe</p>
-                <span>40€</span>
+            <h3>PLATS</h3>
+            <article class="slide-top">
+                <div class="meal-container">
+                    <div class="text-container">
+                        <h4>Poulet rôti aux herbes de Provence</h4>
+                        <p>Et sa crème de truffe</p>
+                    </div>
+                    <div class="check">
+                        <span>40€</span>
+                    </div>
             </article>
-            <article>
-                <h3>Langouste rôtie</h3>
-                <p>Et ses légumes de saison</p>
-                <span>35€</span>
+            <article class="slide-top">
+                <div class="meal-container">
+                    <div class="text-container">
+                        <h4>Langouste rôtie</h4>
+                        <p>Et ses légumes de saison</p>
+                    </div>
+                    <div class="check">
+                        <span>35€</span>
+                    </div>
+                </div>
             </article>
-            <article>
-                <h3>Côte de boeuf Angus</h3>
-                <p>Et sa purée de panais</p>
-                <span>44€</span>
+            <article class="slide-top">
+                <div class="meal-container">
+                    <div class="text-container">
+                        <h4>Côte de boeuf Angus</h4>
+                        <p>Et sa purée de panais</p>
+                    </div>
+                    <div class="check">
+                        <div class="text">
+                            <span>44€</span>
+                        </div>
+                    </div>
+                </div>
             </article>
         </div>
         <div class="desserts">
-            <h2>DESSERTS</h2>
-            <article>
-                <h3>Farandole de desserts</h3>
-                <p>Du chef</p>
-                <span>18€</span>
+            <h3>DESSERTS</h3>
+            <article class="slide-top">
+                <div class="meal-container">
+                    <div class="text-container">
+                        <h4>Farandole de desserts</h4>
+                        <p>Du chef</p>
+                    </div>
+                    <div class="check">
+                        <span>18€</span>
+                    </div>
+                </div>
             </article>
-            <article>
-                <h3>Crème brulée</h3>
-                <p>Revisitée</p>
-                <span>22€</span>
+            <article class="slide-top">
+                <div class="meal-container">
+                    <div class="text-container">
+                        <h4>Crème brulée</h4>
+                        <p>Revisitée</p>
+                    </div>
+                    <div class="check">
+                        <span>22€</span>
+                    </div>
+                </div>
             </article>
-            <article>
-                <h3>Tiramisu</h3>
-                <p>A la noisette</p>
-                <span>23€</span>
+            <article class="slide-top">
+                <div class="meal-container">
+                    <div class="text-container">
+                        <h4>Tiramisu</h4>
+                        <p>A la noisette</p>
+                    </div>
+                    <div class="check">
+                        <span>23€</span>
+                    </div>
+                </div>
             </article>
         </div>
-</section>
-<button class="commander">Commander</button>
+    </section>
+    <button class="commander">Commander</button>
 
-<footer>
-    <div>
-        <p>ohmyfood</p>
-        <ul>
-            <li>
-                <div>
-                    <i class="fas fa-utensils"></i>
-                </div>
-                <a href="#">Proposer un restaurant</a>
-            </li>
-            <li>
-                <div>
-                    <i class="fas fa-hands-helping"></i>
-                </div>
-                <a href="#">Devenir partenaire</a>
-            </li>
-            <li><a href="#">Mentions légales</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
-</footer>
+    <footer>
+        <div>
+            <p>ohmyfood</p>
+            <ul>
+                <li>
+                    <div>
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <a href="#">Proposer un restaurant</a>
+                </li>
+                <li>
+                    <div>
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <a href="#">Devenir partenaire</a>
+                </li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </footer>

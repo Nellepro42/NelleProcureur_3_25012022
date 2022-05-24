@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Nellepro42/NelleProcureur_3_25012022/issues"
   },
-  "homepage": "https://github.com/Nellepro42/NelleProcureur_3_25012022#readme"
+  "homepage": "https://github.com/Nellepro42/NelleProcureur_3_25012022#readme",
+  "dependencies": {
+    "minireset.css": "^0.0.7"
+  }
 }
